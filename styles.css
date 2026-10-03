@@ -1,0 +1,52 @@
+/* The slider itself */
+.mySlider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  height: 8px;
+  border-radius: 100px;
+  background: #ffffff; /* White background */
+  border: 2px solid #470078;
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.mySlider:hover {
+  opacity: .9; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.mySlider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border-radius: 50%;
+  width: 18px; /* Set a specific slider handle width */
+  height: 18px; /* Slider handle height */
+  background: #470078; /* Purple background */
+  cursor: pointer; /* Cursor on hover */
+  border: 2px solid #000000;
+}
+
+.mySlider::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border-radius: 100%;
+  width: 18px; /* Set a specific slider handle width */
+  height: 18px; /* Slider handle height */
+  background: #470078; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border: 2px solid #000000;
+}
+
+.mySlider::-webkit-slider-progress {
+  height: 8px;
+  background-color: #470078;
+  border-radius: 8px;
+}
+
+.mySlider::-moz-range-progress {
+  height: 8px;
+  background-color: #470078;
+  border-radius: 8px;
+}
